@@ -1,0 +1,89 @@
+/* styles.css */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(2, 2, 27);
+}
+
+
+/* CREATE A POST */
+#post-form {
+    max-width: 12rem;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    background-color: white;
+    margin-left: 2rem;
+    padding: 1rem;
+    border-radius: .5rem;
+  }
+
+#posts-container {
+    max-width: 600px;
+  }
+
+.delete-btn {
+    background-color: #ff4d4d;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+.post {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+  }
+
+
+/*  */
+
+.header {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    font-size: 45px;
+    margin-left: 5rem;
+    align-items:center;
+}
+
+.post-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.post-divs-json {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 1rem;
+    background-color: white;
+    margin-bottom: 20px;
+    width: 20rem;
+    height: auto;
+}
+
+.post-reactions {
+    font-weight: bold;
+    color: #ff4500; /* Adjust the color based on your design */
+}
+
+.like-button {
+    background-color: #4caf50; /* Green */
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.like-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
