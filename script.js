@@ -1,5 +1,3 @@
-// script.js
-
 document.addEventListener("DOMContentLoaded", function () {
     // Fetch posts from local storage
     const storedPosts = JSON.parse(localStorage.getItem("posts")) || [];
@@ -29,7 +27,9 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById('create-post-button').addEventListener('click', createPost);
 });
 
-function createPost() {
+function createPost(event) {
+    event.preventDefault(); // Prevents the default form submission behavior
+
     const title = document.getElementById('post-title').value;
     const content = document.getElementById('post-content').value;
     const tags = document.getElementById('post-tags').value.split(',').map(tag => tag.trim());
@@ -48,6 +48,7 @@ function createPost() {
     savePostsToLocalStorage();
 }
 
+// APPEND POST
 function appendPost(post, atBeginning = false) {
     const postContainer = document.getElementById("dummy-post");
 
@@ -55,7 +56,7 @@ function appendPost(post, atBeginning = false) {
     postDiv.classList.add("post-divs-json");
 
     postDiv.innerHTML = `
-        <h1 class="post-divs-text">${post.title}</h1>
+        <h2 class="post-divs-text">${post.title}</h2>
         <p class="post-divs-text">${post.body}</p>
         <p class="post-tags">Tags: ${post.tags.join(", ")}</p>
         <p class="post-reactions">Reactions: <span class="reaction-count">${post.reactions}</span></p>

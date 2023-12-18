@@ -8,29 +8,52 @@
 </head>
 <body>
 
-    <!-- HEADER SECTION -->
-    <header class="header">
-        <p>reddit</p>
-    </header>
+      <!-- TOP NAVBAR -->
+      <nav> 
+        <!-- Left Section -->
+        <div class="left-section">
+            <img src="reddit.png" alt="reddit-logo" class="top-nav-img">
+            <p class="reddit-text">reddit</p>
+        </div>
+
+        <!-- Middle section -->
+        <div class="search-bar">
+            <input type="text" placeholder="Search Reddit"   >
+        </div>
+
+        <!-- Right Section -->
+        <div class="right-section">
+            <div class="div-buttons">
+                <button class="top-nav-button">
+                    <p class="top-nav-button-text">Get app</p>
+                </button>
+            </div>
+            <div class="div-buttons">
+                <button class="top-nav-button" style="background-color: #bd7f0d;">
+                    <p class="top-nav-button-text" style="background-color: #bd7f0d;">Log In</p>
+                </button>
+            </div>
+        </div>
+    </nav>
 
     <!-- CREATE OWN POSTS SECTION -->
     <aside class="create-post-section">
     <div id="post-form">
-        <h2>Create a Post</h2>
+        <h2 style="text-align: center; color: white;">Create a Post</h2>
         <form id="create-post-form">
-          <label for="post-title">Title:</label>
+          <label for="post-title" style="font-weight: 500; color: white;">Title:</label>
           <input type="text" id="post-title" required>
           <br>
     
-          <label for="post-content">Content:</label>
+          <label for="post-content" style="font-weight: 500; color: white;">Content:</label>
           <textarea id="post-content" rows="4" required></textarea>
           <br>
     
-          <label for="post-tags">Tags (comma-separated):</label>
+          <label for="post-tags" style="font-weight: 400; color: white;">Tags (comma-separated):</label>
           <input type="text" id="post-tags">
           <br>
     
-          <button type="button" onclick="createPost()">Create Post</button>
+          <button type="button" onclick="createPost()" id="create-post-button">Create Post</button>
         </form>
       </div>
     </aside>
