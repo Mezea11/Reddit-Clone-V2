@@ -91,6 +91,9 @@ function appendPost(post, atBeginning = false) {
 
         // Remove the post from local storage
         removePostFromLocalStorage(post);
+
+        alert("Removed a post.");
+        console.log("Removed a post.");
     });
 }
 

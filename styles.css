@@ -199,8 +199,19 @@ nav {
     margin-bottom: 20px;
     margin-top: 4rem;
     width: 20rem;
-    height: auto;
+    height: 30rem;
+    overflow-y: auto;
 }
+
+.element-selector {
+    overflow-y:scroll;
+    max-height: 80vh;
+    /* Hide the vertical scrollbar when there is no need for it */
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
 
 .post-divs-text {
     border-radius: 10px;
