@@ -1,0 +1,34 @@
+Du skall i denna uppgift bygga en mini-reddit klon som använder DummyJSON posts för att hämta inlägg. Projektet skall endast bestå av en sida. Följande funktionalitet/delar skall finnas:
+
+Alla inlägg ska visas på sidan
+1. Hämta inlägg från DummyJSON
+    Varje inlägg skall minst visa en titel, innehållet och tags
+    
+    KLART
+
+2.En sektion för att skapa nya inlägg. Dessa hanteras bara lokalt och måste inte anroppa API:et.
+    Det skall gå att välja titel, innehåll och tags
+
+    KLART
+
+För att nå VG behöver du även implementera:
+
+1. Möjlighet att "gilla" inlägg. Varje inlägg har en reactions variabel (referera till API:et).
+    Nu måste varje inlägg också visa antal reaktioner/likes
+
+    KLART
+
+2. Spara allt i local storage så att informationen finns kvar även efter man uppdaterar sidan
+    Alla inlägg ska sparas i local storage. De borde överskriva API:et om de finns sparade
+    
+    KLART
+
+Övrig information:
+
+1. Det finns inga användare. Man vet inte vem som har skapat ett inlägg.
+2. Det går inte att logga in, eftersom det inte finns några användare.
+3. Du väljer design och tema själv. Det finns inga krav på hur "snygg" sidan skall vara.
+
+Inlämning:
+Resultatet lämnas in på omniway med en git-länk. Se till att bjuda in läraren om repositoriet är privat.
+

@@ -8,12 +8,13 @@
 </head>
 <body>
 
+    <!-- HEADER SECTION -->
     <header class="header">
         <p>reddit</p>
     </header>
 
-    <!-- CREATE OWN POSTS -->
-    
+    <!-- CREATE OWN POSTS SECTION -->
+    <aside class="create-post-section">
     <div id="post-form">
         <h2>Create a Post</h2>
         <form id="create-post-form">
@@ -32,15 +33,15 @@
           <button type="button" onclick="createPost()">Create Post</button>
         </form>
       </div>
-
+    </aside>
       
       <!-- DUMMY JSON POSTS -->
-
-    <div class="post-container">
-        <div id="dummy-post"></div>
-    </div>
-
-
+    <main class="main-container">
+         <div class="post-container">
+             <div id="dummy-post"></div>
+         </div>
+    </main>
+    <!-- SCRIPT TAG -->
     <script src="script.js"></script>
 </body>
 </html>
